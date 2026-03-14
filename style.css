@@ -1,0 +1,98 @@
+body {
+    font-family: 'Brush Script MT', cursive;
+    color: #fff;
+    background-color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Colunas de organização da página */
+.container {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.left-column {
+    align-items: center;  
+    justify-content: center;
+    display: flex;
+    flex: 1;
+    
+    border: 1px solid #fff;
+    margin: 5px;
+}
+
+.middle-column {
+    align-items: center;  
+    justify-content: left;
+    display: flex;
+    flex: 3;
+    
+    border: 1px solid #fff;
+    margin: 5px;
+    padding: 20px;
+}
+
+/* COLUNA CENTRAL */
+/* Perfil */
+.profile-pic-container{
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espaço entre foto e balão */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.speech-bubble{
+    position: relative;
+    top: -40px;
+
+    max-width:300px;
+    font-size:18px;
+
+    border-radius:20px;
+    background:white;
+    color:black;
+
+    padding:15px 20px;
+
+}
+
+.speech-bubble::after{
+    content:"";
+    position:absolute;
+
+    left:-16px;
+    top:20px;
+
+    border-width:10px;
+    border-style:solid;
+    border-color:transparent white transparent transparent;
+}
+
+/* Apresentação */
+.greetings {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+/* ELEMENTOS TEXTUAIS */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+h1 {
+    text-align:center;
+    width:100%;
+}
