@@ -140,7 +140,7 @@ img {
     z-index: -1;
     pointer-events: none;
 
-    background-image: url("/images/petals.gif");
+    background-image: url("./images/petals.gif");
     background-size: 140px;
     background-repeat: repeat;
     background-position: center;
