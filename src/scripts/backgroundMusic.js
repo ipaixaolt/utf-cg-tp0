@@ -54,8 +54,8 @@ function updateMusic() {
     updateToggleIcon();
 }
 
-const lightModeMusic = "/audio/yureru-kimochi-TakayukiNegishi.mp3";
-const darkModeMusic = "/audio/yoru-no-umi-TakayukiNegishi.mp3";
+const lightModeMusic = "./audio/yureru-kimochi-TakayukiNegishi.mp3";
+const darkModeMusic = "./audio/yoru-no-umi-TakayukiNegishi.mp3";
 function getCurrentMusic() {
     return document.body.classList.contains("darkmode")
         ? darkModeMusic
