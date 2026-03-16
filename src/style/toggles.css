@@ -1,0 +1,107 @@
+
+/* MUSICA */
+.music-toggle {
+    background-color: transparent;
+    
+    border: 0;
+    transition: transform 0.2s ease;
+}
+
+.music-toggle:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+.music-toggle:hover .music-icon {
+    fill: var(--primary-color-hover);
+}
+
+.music-icon {
+    fill: var(--primary-color);
+
+    height: 24px;
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+    width: 24px;
+
+    
+}
+
+.play-icon {
+    display: none;
+}
+
+.pause-icon {
+    display: block;
+}
+
+.music-playing .play-icon {
+    display: block;
+}
+
+.music-playing .pause-icon {
+    display: none;
+}
+
+/* TEMA */
+#theme-toggle {
+    align-items: center;
+    background-color: var(--card-background-color);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    border: 0;
+    border-radius: 12px;
+    height: 100px;
+    padding: 6px;
+    width: 60px;
+
+}
+
+/* Tooltip */
+.theme-text {
+    background: var(--card-background-color);
+    position: absolute;
+    
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 12px;
+    opacity: 0;
+    padding: 4px 8px;
+    top: 110%;
+    transition: opacity 0.2s;
+}
+
+#theme-toggle:hover .theme-text {
+    opacity: 1;
+}
+
+#theme-toggle:hover .theme-icon {
+    transform: scale(1.05);
+}
+
+/* Ícones */
+.theme-icon {
+    object-fit: contain;
+    
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.2s ease;
+}
+
+.light-icon {
+    display: none;
+}
+
+.darkmode .light-icon {
+    display: block;
+}
+
+.darkmode .dark-icon {
+    display: none;
+}

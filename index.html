@@ -5,46 +5,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/src/style/colorThemes.css">
+    <link rel="stylesheet" href="/src/style/layout.css">
+    <link rel="stylesheet" href="/src/style/middleContainer.css">
+    <link rel="stylesheet" href="/src/style/navigation.css">
+    <link rel="stylesheet" href="/src/style/toggles.css">
+    <link rel="stylesheet" href="/src/style/leftContainer.css">
+
     <title>Minha página</title>
-    <link rel="icon" type="image/x-icon" href="/images/Navi.gif">
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="petals-background"></div>
 
-    <div class="container">
+    <audio id="bg-music" autoplay loop>
+        <source id="music-source" src="" type="audio/mpeg">
+    </audio>
+
+    <main class="container">
         <div class="left-column">
+            <div class="profile-pic-container">
+                <img src="/images/me-low-res.jpg" alt="Minha foto" class="profile-pic">
+                <div class="speech-bubble">
+                    Olá, seja bem-vindo ao meu site!
+                </div>
+            </div>
+            <div class="basic-info">
+                <ul>
+                    <li>Nome: Isadellis</li>
+                    <li>Curso: Engenharia da Computação</li>
+                    <li>Email: isadellispaixao@gmail.com</li>
+                </ul>
+            </div>
+            <div class="stacks">
+                <h2 class="stacks-title">Stacks atuais</h2>
+                <div class="stack-icons">
+                    <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
+                    <img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript">
+                    <img src="https://skillicons.dev/icons?i=javascript" alt="JavaScript">
+                </div>
+            </div>
+            <nav class="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                </ul>
+            </nav>
+            <div class="in-progress">
+                <img src="/images/kero-walking.gif" class="kero-walking">
+                <span class="progress-text">Em construção...</span>
+            </div>
+
 
         </div>
-        <div class="middle-column">
 
-            <div class="greetings">
-                <div class="profile-pic-container">
-                    <img src="/images/me-low-res.jpg" alt="Minha foto" class="profile-pic">
-                    <div class="speech-bubble">
-                        Olá, seja bem-vindo ao meu site!
+        <div class="middle-column">
+            <div class="toggles">
+                <button id="music-toggle" class="music-toggle" aria-label="Ativar música">
+                    <svg class="music-icon play-icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                        <path
+                            d="M287-167q-47-47-47-113t47-113q47-47 113-47 23 0 42.5 5.5T480-418v-422h240v160H560v400q0 66-47 113t-113 47q-66 0-113-47Z" />
+                    </svg>
+                    <svg class="music-icon pause-icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+                        <path
+                            d="M792-56 56-792l56-56 736 736-56 56ZM560-514l-80-80v-246h240v160H560v166ZM400-120q-66 0-113-47t-47-113q0-66 47-113t113-47q23 0 42.5 5.5T480-418v-62l80 80v120q0 66-47 113t-113 47Z" />
+                    </svg>
+                </button>
+                <button id="theme-toggle">
+                    <img src="/images/light-mode.png" alt="Light mode icon" class="theme-icon light-icon">
+                    <img src="/images/dark-mode.png" alt="Dark mode icon" class="theme-icon dark-icon">
+                    <span class="theme-text">Mudar de modo</span>
+                </button>
+            </div>
+            <div class="home" id="home">
+                <h1>Início</h1>
+
+                <div class="intro-row">
+                    <img src="images/hooray-sakura.jpg" class="intro-img" />
+
+                    <p class="introduction">
+                        Olá! Me chamo Isadellis, sou aluna do sétimo período de Engenharia da Computação.
+                        Este site foi desenvolvido para a disciplina de Computação Gráfica, com o objetivo
+                        de simular um fluxo básico de desenvolvimento web, utilizando HTML, CSS e JavaScript,
+                        e exercitar a programação dirigida por eventos.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="about" id="about">
+                <h1>Sobre mim</h1>
+                <div class="about-section">
+                    <div class="about-card">
+                        <h2>Hobbies</h2>
+                        <ul>
+                            <li>Crochê</li>
+                            <li>Ler</li>
+                            <li>Jogar</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card">
+                        <h2>Leituras</h2>
+                        <ul>
+                            <li>Warbreaker - Brandon Sanderson (8/10⭐)</li>
+                            <li>Se os Gatos Desaparecessem do Mundo - Genki Kawamura (10/10⭐)</li>
+                            <li>A Metamorfose - Franz Kafka (8/10⭐)</li>
+                            <li>A Vida é Curta Demais Para Viver o Mínimo Das Coisas - Iandê Albuquerque (1/10⭐)</li>
+                            <li>Noites Brancas - Fiodor Dostoevsky (Leitura atual)</li>
+                        </ul>
                     </div>
                 </div>
-                <br/>
-                <h1>Sobre mim</h1>
-                <p>
-                    Me chamo Isadellis, sou aluna do sétimo período de Engenharia da Computação.
-                    Este site foi desenvolvido para a disciplina de Computação Gráfica, com o objetivo de simular um
-                    fluxo básico de
-                    desenvolvimento web, utilizando HTML, CSS e JavaScript, e exercitar a programação dirigida por
-                    eventos.
-                </p>
-                <p>
-                    No tempo livre sou uma gateira apaixonada que tem quatro gatos: Jade, Bombril, Bergabota e Cinderela. Dois moram
-                    comigo e os outros dois moram com minha mãe, mas eu os vejo sempre que posso. Eles são uma parte
-                    importante da minha vida e me trazem muita alegria.
-                </p>
             </div>
+
+            <div class="mistery-button-container">
+                <p class="hint-text"><i>Clique na carta para revelar um segredo...</i></p>
+                <h2 class="sakura-incantation">
+                    Chave que guarda o poder das trevas!<br>
+                    Mostre seus verdadeiros poderes sobre nós,<br>
+                    e ofereça-os à valente Sakura que aceitou esta missão!
+                    <span>Liberte-se! ✨</span>
+                </h2>
+
+                <button id="mistery-button" class="mistery-button" aria-label="Abrir carta surpresa">
+                    <img src="/images/sakura-card.jpg" alt="Carta Sakura" class="mistery-card-image">
+                </button>
+            </div>
+
+            <div id="video-popup" class="video-popup">
+                <div class="popup-content">
+                    <button class="popup-close" id="popup-close">✕</button>
+
+                    <iframe id="youtube-video" src="" title="Vídeo surpresa" frameborder="0" allow="autoplay"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
         </div>
+    </main>
 
-    </div>
-
-
+    <script src="/src/scripts/theme.js"></script>
+    <script src="/src/scripts/backgroundMusic.js"></script>
+    <script src="/src/scripts/misteryButton.js"></script>
 </body>
 
 </html>

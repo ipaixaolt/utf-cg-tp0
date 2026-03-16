@@ -1,0 +1,29 @@
+:root {
+    --background-color: #fff8e9;
+
+    --card-background-color: #fff1d6;
+    --menu-background-color: #fffdf6;
+    
+    --text-color: #5a3b4d;
+
+    --primary-color: #d94f8a;
+    --primary-color-hover: #b93b70;
+
+    --border-color: #f6e2b8;
+    --highlight-color: #ffe7b5;
+}
+
+.darkmode {
+    --background-color: #0f1726;
+
+    --card-background-color: #18233a;
+    --menu-background-color: #141d31;
+
+    --text-color: #f3f6ff;
+
+    --primary-color: #ff8fbd;
+    --primary-color-hover: #ff6fa8;
+
+    --border-color: #5a6aa6;
+    --highlight-color: #222e4f;
+}
